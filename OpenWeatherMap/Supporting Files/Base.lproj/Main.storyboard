@@ -32,7 +32,7 @@
         <scene sceneID="QNe-kA-XXB">
             <objects>
                 <viewControllerPlaceholder storyboardName="Weather" id="cUb-u2-xAU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Weather" image="weather" springLoaded="YES" id="nXd-85-Pvq">
+                    <tabBarItem key="tabBarItem" title="Weather" image="weather_selected" springLoaded="YES" id="nXd-85-Pvq">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +48,7 @@
         <scene sceneID="r4Y-AE-gXf">
             <objects>
                 <viewControllerPlaceholder storyboardName="History" id="ajV-qX-K7v" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="sO3-Tt-aOi"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history_selected" id="sO3-Tt-aOi"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-yh-YJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +58,7 @@
         <scene sceneID="3m8-8x-hY7">
             <objects>
                 <viewControllerPlaceholder storyboardName="Map" id="H6b-vP-KZN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="qXd-wU-X6a"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map_selected" id="qXd-wU-X6a"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="771-M4-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +66,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="weather" width="23" height="23"/>
+        <image name="history_selected" width="30" height="30"/>
+        <image name="map_selected" width="30" height="30"/>
+        <image name="weather_selected" width="30" height="24"/>
     </resources>
 </document>
