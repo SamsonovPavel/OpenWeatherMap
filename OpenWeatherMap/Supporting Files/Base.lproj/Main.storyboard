@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UuQ-u6-kIU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xej-U9-CTz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UuQ-u6-kIU" customClass="TabBarController" customModule="OpenWeatherMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dSv-8C-1s6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cUb-u2-xAU" kind="relationship" relationship="viewControllers" id="ivP-Rj-4Le"/>
+                        <segue destination="ajV-qX-K7v" kind="relationship" relationship="viewControllers" id="dZU-5J-Ry1"/>
+                        <segue destination="H6b-vP-KZN" kind="relationship" relationship="viewControllers" id="DJ9-t3-hnS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78T-9w-yR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="QNe-kA-XXB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Weather" id="cUb-u2-xAU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" image="weather" springLoaded="YES" id="nXd-85-Pvq">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJu-tr-Si0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="623"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="r4Y-AE-gXf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="ajV-qX-K7v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" id="sO3-Tt-aOi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-yh-YJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="623"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="3m8-8x-hY7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="H6b-vP-KZN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="qXd-wU-X6a"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="771-M4-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="623"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weather" width="23" height="23"/>
+    </resources>
+</document>

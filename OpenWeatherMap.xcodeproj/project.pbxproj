@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50041E882332373700772411 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50041E862332373700772411 /* WeatherViewController.swift */; };
+		50041E90233237B200772411 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50041E8E233237B200772411 /* HistoryViewController.swift */; };
+		50041E972332380B00772411 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50041E952332380B00772411 /* MapViewController.swift */; };
+		50041E9D233238F500772411 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50041E9C233238F500772411 /* Weather.storyboard */; };
+		50041E9F2332394000772411 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50041E9E2332394000772411 /* History.storyboard */; };
+		50041EA12332395700772411 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50041EA02332395700772411 /* Map.storyboard */; };
+		50041EA3233242B000772411 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50041EA2233242B000772411 /* TabBarController.swift */; };
 		50A3A9D32331394800FBA704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3A9D22331394800FBA704 /* AppDelegate.swift */; };
-		50A3A9D52331394800FBA704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3A9D42331394800FBA704 /* ViewController.swift */; };
 		50A3A9D82331394800FBA704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A9D62331394800FBA704 /* Main.storyboard */; };
 		50A3A9DA2331394900FBA704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A9D92331394900FBA704 /* Assets.xcassets */; };
 		50A3A9DD2331394900FBA704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A9DB2331394900FBA704 /* LaunchScreen.storyboard */; };
@@ -17,9 +23,15 @@
 
 /* Begin PBXFileReference section */
 		2B4D871AB758206F1C6E8671 /* Pods-OpenWeatherMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMap.release.xcconfig"; path = "Target Support Files/Pods-OpenWeatherMap/Pods-OpenWeatherMap.release.xcconfig"; sourceTree = "<group>"; };
+		50041E862332373700772411 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		50041E8E233237B200772411 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		50041E952332380B00772411 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		50041E9C233238F500772411 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		50041E9E2332394000772411 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		50041EA02332395700772411 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		50041EA2233242B000772411 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		50A3A9CF2331394800FBA704 /* OpenWeatherMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A3A9D22331394800FBA704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50A3A9D42331394800FBA704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50A3A9D72331394800FBA704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50A3A9D92331394900FBA704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50A3A9DC2331394900FBA704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +60,112 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		50041E842332369900772411 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50A3A9D62331394800FBA704 /* Main.storyboard */,
+				50A3A9D92331394900FBA704 /* Assets.xcassets */,
+				50A3A9DB2331394900FBA704 /* LaunchScreen.storyboard */,
+				50A3A9DE2331394900FBA704 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50041E85233236F200772411 /* Clsasses */ = {
+			isa = PBXGroup;
+			children = (
+				50A3A9D22331394800FBA704 /* AppDelegate.swift */,
+				50041EA2233242B000772411 /* TabBarController.swift */,
+				50041E8A2332374000772411 /* Modules */,
+			);
+			path = Clsasses;
+			sourceTree = "<group>";
+		};
+		50041E8A2332374000772411 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				50041E8B2332374B00772411 /* Weather */,
+				50041E92233237B900772411 /* History */,
+				50041E992332381000772411 /* Map */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		50041E8B2332374B00772411 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				50041E8D2332376500772411 /* Controller */,
+				50041E8C2332375A00772411 /* View */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		50041E8C2332375A00772411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50041E9C233238F500772411 /* Weather.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50041E8D2332376500772411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50041E862332373700772411 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50041E92233237B900772411 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				50041E93233237C400772411 /* Controller */,
+				50041E94233237D700772411 /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		50041E93233237C400772411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50041E8E233237B200772411 /* HistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50041E94233237D700772411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50041E9E2332394000772411 /* History.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50041E992332381000772411 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				50041E9A2332381B00772411 /* Controller */,
+				50041E9B2332382500772411 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		50041E9A2332381B00772411 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50041E952332380B00772411 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50041E9B2332382500772411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50041EA02332395700772411 /* Map.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		50A3A9C62331394800FBA704 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +187,8 @@
 		50A3A9D12331394800FBA704 /* OpenWeatherMap */ = {
 			isa = PBXGroup;
 			children = (
-				50A3A9D22331394800FBA704 /* AppDelegate.swift */,
-				50A3A9D42331394800FBA704 /* ViewController.swift */,
-				50A3A9D62331394800FBA704 /* Main.storyboard */,
-				50A3A9D92331394900FBA704 /* Assets.xcassets */,
-				50A3A9DB2331394900FBA704 /* LaunchScreen.storyboard */,
-				50A3A9DE2331394900FBA704 /* Info.plist */,
+				50041E85233236F200772411 /* Clsasses */,
+				50041E842332369900772411 /* Supporting Files */,
 			);
 			path = OpenWeatherMap;
 			sourceTree = "<group>";
@@ -85,7 +199,6 @@
 				953D5CC8A357D8E35DDA1922 /* Pods-OpenWeatherMap.debug.xcconfig */,
 				2B4D871AB758206F1C6E8671 /* Pods-OpenWeatherMap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A3A9DD2331394900FBA704 /* LaunchScreen.storyboard in Resources */,
+				50041E9D233238F500772411 /* Weather.storyboard in Resources */,
 				50A3A9DA2331394900FBA704 /* Assets.xcassets in Resources */,
 				50A3A9D82331394800FBA704 /* Main.storyboard in Resources */,
+				50041E9F2332394000772411 /* History.storyboard in Resources */,
+				50041EA12332395700772411 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A3A9D52331394800FBA704 /* ViewController.swift in Sources */,
+				50041E90233237B200772411 /* HistoryViewController.swift in Sources */,
 				50A3A9D32331394800FBA704 /* AppDelegate.swift in Sources */,
+				50041E882332373700772411 /* WeatherViewController.swift in Sources */,
+				50041EA3233242B000772411 /* TabBarController.swift in Sources */,
+				50041E972332380B00772411 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYDBZG4WPU;
-				INFOPLIST_FILE = OpenWeatherMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherMap/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYDBZG4WPU;
-				INFOPLIST_FILE = OpenWeatherMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenWeatherMap/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
